@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.8.1.0">
+    <Macro Name="Enable Pan" Guid="EC F9 C6 1B 86 1C 10 02 3C 16 BD 63 51 CE 05 31">
+        <MacroLine Name="Enable Pan" Command="Lua &quot;DMXInvert.panEnabled()&quot;" />
+    </Macro>
+    <Macro Name="Disble Pan" Guid="EC F9 C6 1B 34 75 10 04 5A B8 18 E0 7A B5 FD 6B">
+        <MacroLine Name="Disble Pan" Command="Lua &quot;DMXInvert.panDisabled()&quot;" />
+    </Macro>
+    <Macro Name="Enable Tilt" Guid="EC F9 C6 1B B7 4F 10 04 10 3F B2 5B B5 C7 95 61">
+        <MacroLine Name="Enable Tilt" Command="Lua &quot;DMXInvert.tiltEnabled()&quot;" />
+    </Macro>
+    <Macro Name="Disble Tilt" Guid="EC F9 C6 1B 3E 3B 10 04 CB B8 DA 46 D8 62 E2 61">
+        <MacroLine Name="Disble Tilt" Command="Lua &quot;DMXInvert.tiltDisabled()&quot;" />
+    </Macro>
+</GMA3>

@@ -1,5 +1,5 @@
 --[[
-PanTilt_Inverter V1.0 created by Felix Scheib "DarfSchader"
+PanTilt_Inverter V1.1 created by Felix Scheib "DarfSchader"
 
 GNU GENERAL PUBLIC LICENSE Version 3
 
@@ -16,10 +16,10 @@ Happy Lighting
 
 DMXInvert = {}
 
-DMXInvert.PAN = "pandmxinvert"
-DMXInvert.TILT = "tiltdmxinvert"
+local PAN = "pandmxinvert"
+local TILT = "tiltdmxinvert"
 
-DMXInvert.invert = function (attribute, enabled)
+local function invert(attribute, enabled)
     local subfixtureIndex = SelectionFirst();
 
     while subfixtureIndex do
@@ -32,17 +32,17 @@ DMXInvert.invert = function (attribute, enabled)
 end
 
 DMXInvert.panEnabled = function ()
-    DMXInvert.invert(DMXInvert.PAN, true)
+    invert(PAN, true)
 end
 
 DMXInvert.panDisabled = function ()
-    DMXInvert.invert(DMXInvert.PAN, false)
+    invert(PAN, false)
 end
 
 DMXInvert.tiltEnabled = function ()
-    DMXInvert.invert(DMXInvert.TILT, true)
+    invert(TILT, true)
 end
 
 DMXInvert.tiltDisabled = function ()
-    DMXInvert.invert(DMXInvert.TILT, false)
+    invert(TILT, false)
 end

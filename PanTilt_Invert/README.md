@@ -20,8 +20,8 @@ function myFunction()
 end
 ```
 
-### 2. Functioncall from a macro (recommended for quick access)
-**Trigger** the **needed function** with the **Lua keyword** from a **macroline**.
+### 2. Functioncall from commandline (recommended for quick access)
+**Trigger** the **needed function** with the **Lua keyword** from a **macroline**. Predefined macros can be imported with the **PanTilt_Invert_Macros.xml** file.
 
 ```
 Lua("DMXInvert.panEnabled()")
@@ -69,6 +69,7 @@ To **call** the **functions via commandline** (e.g. in a macro that's assigned t
 | Version | Changelog |
 | ------- | --------- |
 | V1.0| initial version of plugin |
+| V1.1| private attributes added |
 
 ## Known limitations
 - only inverts actual selected fixtures. Doesn't invert fixtures down the hierarchy (e.g. if a grouping fixture is selected, only the grouping fixtures gets invorted, not it's children).
