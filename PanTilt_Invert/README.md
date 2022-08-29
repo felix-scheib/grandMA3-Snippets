@@ -72,3 +72,6 @@ To **call** the **functions via commandline** (e.g. in a macro that's assigned t
 
 ## Known limitations
 - only inverts actual selected fixtures. Doesn't invert fixtures down the hierarchy (e.g. if a grouping fixture is selected, only the grouping fixtures gets invorted, not it's children).
+
+## Disclaimer
+The plugin is made by a private programmer who isn't working for MA Lighting. It's made based on the knowledge of the programmer, not the knowledge of a developer of the grandMA3 system. System failure caused by using this plugin is completely the risk of the user. Never use this plugin in a critical situation! Only use this plugin in show situations after checking that it won't break the system! 
