@@ -24,7 +24,7 @@ end
 **Trigger** the **needed function** with the **Lua keyword** from a **macroline**. Predefined macros can be imported with the **PanTilt_Invert_Macros.xml** file.
 
 ```
-Lua("DMXInvert.panEnabled()")
+Lua "DMXInvert.panEnabled()"
 ```
 In **both cases** the **"PanTilt_Invert.lua" plugin** needs to be **imported** in the **grandMA3 showfile** before the functions are accessible.
 

@@ -1,5 +1,5 @@
 --[[
-PanTilt_Inverter V1.1 created by Felix Scheib "DarfSchader"
+Offset Calculator V1.0 created by Felix Scheib "DarfSchader"
 
 GNU GENERAL PUBLIC LICENSE Version 3
 
@@ -17,35 +17,19 @@ Never use this plugin in a critical situation! Only use this plugin in show situ
 Happy Lighting
 ]]
 
-DMXInvert = {}
+AddToCurrentOffset = {}
 
-local PAN = "pandmxinvert"
-local TILT = "tiltdmxinvert"
+local PAN = "PANOFFSET"
+local TILT = "TILTOFFSET"
 
-local function invert(attribute, enabled)
-    local subfixtureIndex = SelectionFirst()
-
-    while subfixtureIndex do
-        local subFixture = GetSubfixture(subfixtureIndex)
-
-        subFixture[attribute] = tostring(enabled)
-
-        subfixtureIndex = SelectionNext(subfixtureIndex)
-    end
+local function updateOffset(attribute, value)
+    
 end
 
-DMXInvert.panEnabled = function ()
-    invert(PAN, true)
-end
+function AddToCurrentOffset.panOffset(increment) 
+    
+end 
 
-DMXInvert.panDisabled = function ()
-    invert(PAN, false)
-end
-
-DMXInvert.tiltEnabled = function ()
-    invert(TILT, true)
-end
-
-DMXInvert.tiltDisabled = function ()
-    invert(TILT, false)
-end
+function AddToCurrentOffset.tiltOffset(increment) 
+    
+end 
